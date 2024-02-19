@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+
+
+/*               End of Setup             */
+/*                Container               */
+.container { 
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 10px;
+} 
+
+
+/*               HERO SECTION             */
+.hero {
+  margin-top: 200px;
+}
+#product-img {
+  background: url(./images/hero_iphone_13pro.jpg) center no-repeat;
+  height: 600px;
+  margin-top: -200px;
+}
+/*             SUBHERO SECTION             */
+.sub-hero-section {
+  margin-top: 16px;
+}
+.sub-hero-pics{
+  height: 200px;
+  background-size: 640px 200px;
+  border-right: 2px solid #fff;
+}
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#sub-hero-wat { 
+  background: url(images/watch_large.jpg) center center no-repeat;
+}
+#sub-hero-ipa {
+  background: url(images/ipad_pro_large.jpg) center center no-repeat;
+}
+#sub-hero-acc {
+  background: url(images/accessories_large.jpg) center center no-repeat;
+}
+#sub-hero-mac {
+  background: url(images/macbook_large.jpg) center center no-repeat ;
+  border-right: none;
+}
